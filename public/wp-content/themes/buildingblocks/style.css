@@ -1,0 +1,109 @@
+/*
+Theme Name: Building Blocks
+Theme URI: http://wpsite.dev
+Author: the WordPress team
+Author URI: http://wpsite.dev
+Description: Minimalist, responsive theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive-layout
+Text Domain: buildingblocks
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Structure*/
+body {
+	background-color: silver;
+	font-family: arial, sans-serif;
+}
+
+#container {
+	background: #fff;
+	border-radius: 14px;
+	overflow: auto;
+}
+
+#container, header, nav, footer {
+	width: 800px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+footer {
+	background: #000;
+	color: #fff;
+}
+
+#sidebar {
+	float: right;
+	width: 200px;
+}
+
+#left {
+	float: left;
+	width: 590px;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	padding: 10px 20px;
+}
+
+/* Text Rules */
+h1 { font-size: 26px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+
