@@ -28,12 +28,20 @@
 				</button>
 			<a href="<?php echo home_url('/')?>" class="navbar-brand"><?php bloginfo('name')?></a>
 			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<!-- Wordpress gets the pages and puts them in the navigation -->
-					<?php wp_list_pages('title_li='); ?>
-				</ul>
-		  </div><!-- /.navbar-collapse -->
+			<!-- If you just use wp_get_pages() you can't add styling to <li> elements, so instead use wp_bootstrap_navwalker -->
+			<?php
+				wp_nav_menu( array(
+	    			'menu'              => 'primary',
+	    			'theme_location'    => 'primary',
+	    			'depth'             => 2,
+	    			'container'         => 'div',
+	    			'container_class'   => 'collapse navbar-collapse',			
+	    			'container_id'      => 'navbar-collapse',
+	    			'menu_class'        => 'nav navbar-nav navbar-right',
+	    			'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+	    			'walker'            => new wp_bootstrap_navwalker())
+	            );
+	        ?>
+
 		</div><!-- /.container-fluid -->
 	</nav>

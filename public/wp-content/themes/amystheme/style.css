@@ -12,3 +12,11 @@ Text Domain: amystheme
 */
 
 @import url('css/bootstrap.min.css');
+
+body {
+	margin-bottom: 50px;
+}
+
+.list-group {
+	margin-top: 20px;
+}
