@@ -127,3 +127,15 @@ input[type="submit"] {
 .widget_calendar tbody a:hover {
     background-color: #fff;
 }
+
+/* home page header image */
+.header-widget img {
+	margin: 20px auto;
+	width: 90%;
+	display: block;
+}
+
+/* hide title on header image widget */
+.hidden {
+	display: none;
+}
