@@ -13,10 +13,91 @@ Text Domain: amystheme
 
 @import url('css/bootstrap.min.css');
 
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
 body {
 	margin-bottom: 50px;
 }
 
 .list-group {
 	margin-top: 20px;
+}
+
+/* home page header */
+.header-widget {
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+}
+
+/* home page header image */
+.header-widget img {
+	margin-top: -10%;
+	width: 100%;
+	display: block;
+}
+
+/* adjust width for smaller screens (whitespace without this) */
+@media screen and (max-width: 600px) {
+    .header-widget img {
+        width: auto;
+        height: 80vh;
+        margin-top: -25%;
+        margin-left: -50%;
+    }
+}
+
+/* hide title on header image widget */
+.hidden {
+	display: none;
+}
+
+.col-title a {
+	color: #721121;
+}
+
+.col-title a:hover {
+	color: #A5402D;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+	color: #A5402D;
+}
+
+.navbar-brand {
+	font-family: 'Kaushan Script', cursive;	
+	font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus {
+	background-color: #FFCF99;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: #FFC07F;
+}
+
+.comments-title {
+	color: #721121;
+}
+
+.comment-list>.even {
+	background-color: #eee;
+}
+
+.comment-list>.odd {
+	background-color: #bababa;
+}
+
+.comment-list>div {
+	padding: 5px;
+	border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-list div > p {
+	padding: 0 10px;
 }

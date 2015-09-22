@@ -2,12 +2,11 @@
 
 <div class="container">
 	<div class="row">
-		<?php if( dynamic_sidebar('header_image_area') ) : else : endif; ?>
 		<?php 
-			query_posts('posts_per_page=3');
+			query_posts('posts_per_page=10');
 				while(have_posts()) : the_post(); ?>
 
-			<div class="col-sm-4 col-title">
+			<div class="col-sm-10 col-sm-offset-1 col-title">
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<p><?php the_excerpt(); ?></p>
 			</div><!-- /.col-lg-3 -->
