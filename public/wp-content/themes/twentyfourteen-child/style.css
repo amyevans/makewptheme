@@ -1,0 +1,129 @@
+/*
+Theme Name: Child by Amy
+Theme URI: http://wpsite.dev
+Description: Child theme for twentyfourteen
+Author: Amy Evans
+Author URI: http://wpsite.dev
+Template: twentyfourteen
+Version: 1.0
+*/
+
+@import url('../twentyfourteen/style.css');
+
+/* change bg to gray instead of white */
+.site {
+	background-color: #eee;
+}
+
+.site-content .entry-header, .site-content .entry-meta, .site-content .entry-content {
+	background-color: transparent;
+}
+
+.entry-title {
+	font-size: 40px;
+}
+
+/* change green color (#24890d) to pink color */
+a {
+	color: #F15156;
+}
+
+a:hover {
+	color: #F15156!important;
+}
+
+::selection {
+	background: #F15156;
+}
+
+::-moz-selection {
+	background: #F15156;
+}
+
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: #F15156;
+}
+
+.search-toggle {
+	background-color: #F15156;
+}
+
+.hentry .mejs-controls .mejs-time-rail .mejs-time-current {
+	background: #F15156;
+}
+
+.hentry .mejs-overlay:hover .mejs-overlay-button {
+	background-color: #F15156;
+}
+
+.paging-navigation .page-numbers.current {
+	border-top: 5px solid #F15156;
+}
+
+.widget button,
+.widget .button,
+.widget input[type="button"],
+.widget input[type="reset"],
+.widget input[type="submit"] {
+	background-color: #F15156;
+}
+
+.widget_calendar tbody a {
+	background-color: #F15156;
+}
+
+.content-sidebar .widget a {
+	color: #F15156;
+}
+
+.content-sidebar .widget input[type="button"],
+.content-sidebar .widget input[type="reset"],
+.content-sidebar .widget input[type="submit"] {
+	background-color: #F15156;
+}
+
+.slider-control-paging .slider-active:before,
+.slider-control-paging .slider-active:hover:before {
+	background-color: #F15156;
+}
+
+.slider-direction-nav a:hover {
+	background-color: #F15156;
+}
+
+.primary-navigation ul ul {
+	background-color: #F15156;
+}
+
+.primary-navigation li:hover > a,
+.primary-navigation li.focus > a {
+	background-color: #F15156;
+}
+
+.secondary-navigation ul ul {
+	background-color: #F15156;
+}
+
+.secondary-navigation li:hover > a,
+.secondary-navigation li.focus > a {
+	background-color: #F15156;
+}
+
+.site-navigation .current_page_item > a, 
+.site-navigation .current_page_ancestor > a, 
+.site-navigation .current-menu-item > a, 
+.site-navigation .current-menu-ancestor > a {
+    color: #F15156;
+}
+
+#masthead a:hover {
+    color: #fff!important;
+}
+
+.widget_calendar tbody a:hover {
+    background-color: #fff;
+}
